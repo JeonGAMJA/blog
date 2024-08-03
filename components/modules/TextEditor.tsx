@@ -17,20 +17,6 @@ const TextEditor = () => {
   
     return (
       <div>
-        <Editor
-          ref={quillRef}
-          readOnly={readOnly}
-          defaultValue={new Delta()
-            .insert('Hello')
-            .insert('\n', { header: 1 })
-            .insert('Some ')
-            .insert('initial', { bold: true })
-            .insert(' ')
-            .insert('content', { underline: true })
-            .insert('\n')}
-          onSelectionChange={setRange}
-          onTextChange={setLastChange}
-        />
         <div class="controls">
           <label>
             Read Only:{' '}
