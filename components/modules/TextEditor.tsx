@@ -20,11 +20,7 @@ const TextEditor = () => {
         <div class="controls">
           <label>
             Read Only:{' '}
-            <input
-              type="checkbox"
-              value={readOnly}
-              onChange={(e) => setReadOnly(e.target.checked)}
-            />
+            
           </label>
           <button
             className="controls-right"
